@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1.0">
+        <link rel = "stylesheet" type = "text/css" href="style.css">
+        <title>Happy Birthday Siddu</title>
+    </head>
+    <body background = "background.png">
+        <video autoplay muted class = "myVideo" id = "zeltron">
+            <source src = "video.mp4" type = "video/mp4">
+        </video>
+        <script>
+             var vid = document.getElementById("zeltron");
+             vid.onended = function() {
+                  console.log("Finished");
+                  window.location.replace("index.html");
+             };
+        </script>
+    </body>
+</html>
